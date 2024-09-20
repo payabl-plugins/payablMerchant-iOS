@@ -1,0 +1,3986 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LocalizationService",
+        "printedName": "LocalizationService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "localizedString",
+            "printedName": "localizedString(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PayablMerchant19LocalizationServiceC15localizedString3forS2S_tFZ",
+            "mangledName": "$s14PayablMerchant19LocalizationServiceC15localizedString3forS2S_tFZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14PayablMerchant19LocalizationServiceC",
+        "mangledName": "$s14PayablMerchant19LocalizationServiceC",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PBLPaymentButton",
+        "printedName": "PBLPaymentButton",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(paymentPage:onCompletion:content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PBLPaymentButton",
+                "printedName": "PayablMerchant.PBLPaymentButton<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:14PayablMerchant16PBLPaymentButtonV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBLPaymentPage",
+                "printedName": "PayablMerchant.PBLPaymentPage",
+                "usr": "s:14PayablMerchant14PBLPaymentPageC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.PBLPaymentResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PBLPaymentResult",
+                    "printedName": "PayablMerchant.PBLPaymentResult",
+                    "usr": "s:14PayablMerchant16PBLPaymentResultO"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PayablMerchant16PBLPaymentButtonV11paymentPage12onCompletion7contentACyxGAA0cF0C_yAA0C6ResultOcxyXEtcfc",
+            "mangledName": "$s14PayablMerchant16PBLPaymentButtonV11paymentPage12onCompletion7contentACyxGAA0cF0C_yAA0C6ResultOcxyXEtcfc",
+            "moduleName": "PayablMerchant",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PayablMerchant16PBLPaymentButtonV4bodyQrvp",
+            "mangledName": "$s14PayablMerchant16PBLPaymentButtonV4bodyQrvp",
+            "moduleName": "PayablMerchant",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PayablMerchant16PBLPaymentButtonV4bodyQrvg",
+                "mangledName": "$s14PayablMerchant16PBLPaymentButtonV4bodyQrvg",
+                "moduleName": "PayablMerchant",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14PayablMerchant16PBLPaymentButtonV",
+        "mangledName": "$s14PayablMerchant16PBLPaymentButtonV",
+        "moduleName": "PayablMerchant",
+        "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+        "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RouteManager",
+        "printedName": "RouteManager",
+        "declKind": "Class",
+        "usr": "s:14PayablMerchant12RouteManagerC",
+        "mangledName": "$s14PayablMerchant12RouteManagerC",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PBLPaymentPage",
+        "printedName": "PBLPaymentPage",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PBLPaymentPage",
+                "printedName": "PayablMerchant.PBLPaymentPage",
+                "usr": "s:14PayablMerchant14PBLPaymentPageC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBLConfiguration",
+                "printedName": "PayablMerchant.PBLConfiguration",
+                "usr": "s:14PayablMerchant16PBLConfigurationC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PayablMerchant14PBLPaymentPageC13configurationAcA16PBLConfigurationC_tcfc",
+            "mangledName": "$s14PayablMerchant14PBLPaymentPageC13configurationAcA16PBLConfigurationC_tcfc",
+            "moduleName": "PayablMerchant",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(from:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.PBLPaymentResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PBLPaymentResult",
+                    "printedName": "PayablMerchant.PBLPaymentResult",
+                    "usr": "s:14PayablMerchant16PBLPaymentResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PayablMerchant14PBLPaymentPageC7present4from10completionySo16UIViewControllerC_yAA0C6ResultOctF",
+            "mangledName": "$s14PayablMerchant14PBLPaymentPageC7present4from10completionySo16UIViewControllerC_yAA0C6ResultOctF",
+            "moduleName": "PayablMerchant",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14PayablMerchant14PBLPaymentPageC",
+        "mangledName": "$s14PayablMerchant14PBLPaymentPageC",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MultipartFormDataEncodingError",
+        "printedName": "MultipartFormDataEncodingError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "characterSetName",
+            "printedName": "characterSetName",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.MultipartFormDataEncodingError.Type) -> PayablMerchant.MultipartFormDataEncodingError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MultipartFormDataEncodingError",
+                    "printedName": "PayablMerchant.MultipartFormDataEncodingError",
+                    "usr": "s:14PayablMerchant30MultipartFormDataEncodingErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayablMerchant.MultipartFormDataEncodingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MultipartFormDataEncodingError",
+                        "printedName": "PayablMerchant.MultipartFormDataEncodingError",
+                        "usr": "s:14PayablMerchant30MultipartFormDataEncodingErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PayablMerchant30MultipartFormDataEncodingErrorO16characterSetNameyA2CmF",
+            "mangledName": "$s14PayablMerchant30MultipartFormDataEncodingErrorO16characterSetNameyA2CmF",
+            "moduleName": "PayablMerchant"
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.MultipartFormDataEncodingError.Type) -> (Swift.String) -> PayablMerchant.MultipartFormDataEncodingError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> PayablMerchant.MultipartFormDataEncodingError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MultipartFormDataEncodingError",
+                        "printedName": "PayablMerchant.MultipartFormDataEncodingError",
+                        "usr": "s:14PayablMerchant30MultipartFormDataEncodingErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayablMerchant.MultipartFormDataEncodingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MultipartFormDataEncodingError",
+                        "printedName": "PayablMerchant.MultipartFormDataEncodingError",
+                        "usr": "s:14PayablMerchant30MultipartFormDataEncodingErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PayablMerchant30MultipartFormDataEncodingErrorO4nameyACSScACmF",
+            "mangledName": "$s14PayablMerchant30MultipartFormDataEncodingErrorO4nameyACSScACmF",
+            "moduleName": "PayablMerchant"
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.MultipartFormDataEncodingError.Type) -> (Swift.String, Swift.String) -> PayablMerchant.MultipartFormDataEncodingError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) -> PayablMerchant.MultipartFormDataEncodingError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MultipartFormDataEncodingError",
+                        "printedName": "PayablMerchant.MultipartFormDataEncodingError",
+                        "usr": "s:14PayablMerchant30MultipartFormDataEncodingErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, name: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayablMerchant.MultipartFormDataEncodingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MultipartFormDataEncodingError",
+                        "printedName": "PayablMerchant.MultipartFormDataEncodingError",
+                        "usr": "s:14PayablMerchant30MultipartFormDataEncodingErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PayablMerchant30MultipartFormDataEncodingErrorO5valueyACSS_SStcACmF",
+            "mangledName": "$s14PayablMerchant30MultipartFormDataEncodingErrorO5valueyACSS_SStcACmF",
+            "moduleName": "PayablMerchant"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14PayablMerchant30MultipartFormDataEncodingErrorO",
+        "mangledName": "$s14PayablMerchant30MultipartFormDataEncodingErrorO",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PBLEnvironment",
+        "printedName": "PBLEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sandbox",
+            "printedName": "sandbox",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.PBLEnvironment.Type) -> PayablMerchant.PBLEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PBLEnvironment",
+                    "printedName": "PayablMerchant.PBLEnvironment",
+                    "usr": "s:14PayablMerchant14PBLEnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayablMerchant.PBLEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PBLEnvironment",
+                        "printedName": "PayablMerchant.PBLEnvironment",
+                        "usr": "s:14PayablMerchant14PBLEnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PayablMerchant14PBLEnvironmentO7sandboxyA2CmF",
+            "mangledName": "$s14PayablMerchant14PBLEnvironmentO7sandboxyA2CmF",
+            "moduleName": "PayablMerchant"
+          },
+          {
+            "kind": "Var",
+            "name": "live",
+            "printedName": "live",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.PBLEnvironment.Type) -> PayablMerchant.PBLEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PBLEnvironment",
+                    "printedName": "PayablMerchant.PBLEnvironment",
+                    "usr": "s:14PayablMerchant14PBLEnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayablMerchant.PBLEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PBLEnvironment",
+                        "printedName": "PayablMerchant.PBLEnvironment",
+                        "usr": "s:14PayablMerchant14PBLEnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PayablMerchant14PBLEnvironmentO4liveyA2CmF",
+            "mangledName": "$s14PayablMerchant14PBLEnvironmentO4liveyA2CmF",
+            "moduleName": "PayablMerchant"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBLEnvironment",
+                "printedName": "PayablMerchant.PBLEnvironment",
+                "usr": "s:14PayablMerchant14PBLEnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBLEnvironment",
+                "printedName": "PayablMerchant.PBLEnvironment",
+                "usr": "s:14PayablMerchant14PBLEnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PayablMerchant14PBLEnvironmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14PayablMerchant14PBLEnvironmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PayablMerchant14PBLEnvironmentO9hashValueSivp",
+            "mangledName": "$s14PayablMerchant14PBLEnvironmentO9hashValueSivp",
+            "moduleName": "PayablMerchant",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PayablMerchant14PBLEnvironmentO9hashValueSivg",
+                "mangledName": "$s14PayablMerchant14PBLEnvironmentO9hashValueSivg",
+                "moduleName": "PayablMerchant",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PayablMerchant14PBLEnvironmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14PayablMerchant14PBLEnvironmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "PayablMerchant",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14PayablMerchant14PBLEnvironmentO",
+        "mangledName": "$s14PayablMerchant14PBLEnvironmentO",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PBLConfiguration",
+        "printedName": "PBLConfiguration",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sessionId:transactionId:ephemeralKey:merchantId:customerId:environment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PBLConfiguration",
+                "printedName": "PayablMerchant.PBLConfiguration",
+                "usr": "s:14PayablMerchant16PBLConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBLEnvironment",
+                "printedName": "PayablMerchant.PBLEnvironment",
+                "usr": "s:14PayablMerchant14PBLEnvironmentO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PayablMerchant16PBLConfigurationC9sessionId011transactionE012ephemeralKey08merchantE008customerE011environmentACSS_S4SAA14PBLEnvironmentOtcfc",
+            "mangledName": "$s14PayablMerchant16PBLConfigurationC9sessionId011transactionE012ephemeralKey08merchantE008customerE011environmentACSS_S4SAA14PBLEnvironmentOtcfc",
+            "moduleName": "PayablMerchant",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBLConfiguration",
+                "printedName": "PayablMerchant.PBLConfiguration",
+                "usr": "s:14PayablMerchant16PBLConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBLConfiguration",
+                "printedName": "PayablMerchant.PBLConfiguration",
+                "usr": "s:14PayablMerchant16PBLConfigurationC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PayablMerchant16PBLConfigurationC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14PayablMerchant16PBLConfigurationC2eeoiySbAC_ACtFZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PayablMerchant16PBLConfigurationC4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14PayablMerchant16PBLConfigurationC4hash4intoys6HasherVz_tF",
+            "moduleName": "PayablMerchant",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PayablMerchant16PBLConfigurationC9hashValueSivp",
+            "mangledName": "$s14PayablMerchant16PBLConfigurationC9hashValueSivp",
+            "moduleName": "PayablMerchant",
+            "implicit": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PayablMerchant16PBLConfigurationC9hashValueSivg",
+                "mangledName": "$s14PayablMerchant16PBLConfigurationC9hashValueSivg",
+                "moduleName": "PayablMerchant",
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14PayablMerchant16PBLConfigurationC",
+        "mangledName": "$s14PayablMerchant16PBLConfigurationC",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageService",
+        "printedName": "ImageService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getImage",
+            "printedName": "getImage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Image?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Image",
+                    "printedName": "SwiftUI.Image",
+                    "usr": "s:7SwiftUI5ImageV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PayablMerchant12ImageServiceC03getC0y7SwiftUI0C0VSgSSFZ",
+            "mangledName": "$s14PayablMerchant12ImageServiceC03getC0y7SwiftUI0C0VSgSSFZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14PayablMerchant12ImageServiceC",
+        "mangledName": "$s14PayablMerchant12ImageServiceC",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PBLPaymentResult",
+        "printedName": "PBLPaymentResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "completed",
+            "printedName": "completed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.PBLPaymentResult.Type) -> PayablMerchant.PBLPaymentResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PBLPaymentResult",
+                    "printedName": "PayablMerchant.PBLPaymentResult",
+                    "usr": "s:14PayablMerchant16PBLPaymentResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayablMerchant.PBLPaymentResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PBLPaymentResult",
+                        "printedName": "PayablMerchant.PBLPaymentResult",
+                        "usr": "s:14PayablMerchant16PBLPaymentResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PayablMerchant16PBLPaymentResultO9completedyA2CmF",
+            "mangledName": "$s14PayablMerchant16PBLPaymentResultO9completedyA2CmF",
+            "moduleName": "PayablMerchant",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "canceled",
+            "printedName": "canceled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.PBLPaymentResult.Type) -> PayablMerchant.PBLPaymentResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PBLPaymentResult",
+                    "printedName": "PayablMerchant.PBLPaymentResult",
+                    "usr": "s:14PayablMerchant16PBLPaymentResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayablMerchant.PBLPaymentResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PBLPaymentResult",
+                        "printedName": "PayablMerchant.PBLPaymentResult",
+                        "usr": "s:14PayablMerchant16PBLPaymentResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PayablMerchant16PBLPaymentResultO8canceledyA2CmF",
+            "mangledName": "$s14PayablMerchant16PBLPaymentResultO8canceledyA2CmF",
+            "moduleName": "PayablMerchant",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.PBLPaymentResult.Type) -> (any Swift.Error) -> PayablMerchant.PBLPaymentResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> PayablMerchant.PBLPaymentResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PBLPaymentResult",
+                        "printedName": "PayablMerchant.PBLPaymentResult",
+                        "usr": "s:14PayablMerchant16PBLPaymentResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: any Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayablMerchant.PBLPaymentResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PBLPaymentResult",
+                        "printedName": "PayablMerchant.PBLPaymentResult",
+                        "usr": "s:14PayablMerchant16PBLPaymentResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PayablMerchant16PBLPaymentResultO6failedyACs5Error_p_tcACmF",
+            "mangledName": "$s14PayablMerchant16PBLPaymentResultO6failedyACs5Error_p_tcACmF",
+            "moduleName": "PayablMerchant",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14PayablMerchant16PBLPaymentResultO",
+        "mangledName": "$s14PayablMerchant16PBLPaymentResultO",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "PayablMerchant"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "View",
+        "printedName": "View",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "paymentPage",
+            "printedName": "paymentPage(isPresented:paymentPage:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBLPaymentPage",
+                "printedName": "PayablMerchant.PBLPaymentPage",
+                "usr": "s:14PayablMerchant14PBLPaymentPageC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayablMerchant.PBLPaymentResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PBLPaymentResult",
+                    "printedName": "PayablMerchant.PBLPaymentResult",
+                    "usr": "s:14PayablMerchant16PBLPaymentResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP14PayablMerchantE11paymentPage11isPresentedAE12onCompletionQrAA7BindingVySbG_AD010PBLPaymentG0CyAD0M6ResultOctF",
+            "mangledName": "$s7SwiftUI4ViewP14PayablMerchantE11paymentPage11isPresentedAE12onCompletionQrAA7BindingVySbG_AD010PBLPaymentG0CyAD0M6ResultOctF",
+            "moduleName": "PayablMerchant",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7SwiftUI4ViewP",
+        "mangledName": "$s7SwiftUI4ViewP",
+        "moduleName": "SwiftUI",
+        "genericSig": "<τ_0_0.Body : SwiftUI.View>",
+        "sugared_genericSig": "<Self.Body : SwiftUI.View>",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "TypeEraser",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSessionDataTask",
+        "printedName": "URLSessionDataTask",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSessionDataTask",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSessionDataTask",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSURLSessionTask",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Foundation.URLSessionTask",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "String",
+        "printedName": "String",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "merchantIdProduction",
+            "printedName": "merchantIdProduction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:SS14PayablMerchantE20merchantIdProductionSSvpZ",
+            "mangledName": "$sSS14PayablMerchantE20merchantIdProductionSSvpZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SS14PayablMerchantE20merchantIdProductionSSvgZ",
+                "mangledName": "$sSS14PayablMerchantE20merchantIdProductionSSvgZ",
+                "moduleName": "PayablMerchant",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "merchantIdSandbox",
+            "printedName": "merchantIdSandbox",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:SS14PayablMerchantE17merchantIdSandboxSSvpZ",
+            "mangledName": "$sSS14PayablMerchantE17merchantIdSandboxSSvpZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SS14PayablMerchantE17merchantIdSandboxSSvgZ",
+                "mangledName": "$sSS14PayablMerchantE17merchantIdSandboxSSvgZ",
+                "moduleName": "PayablMerchant",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sandboxBaseUrl",
+            "printedName": "sandboxBaseUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:SS14PayablMerchantE14sandboxBaseUrlSSvpZ",
+            "mangledName": "$sSS14PayablMerchantE14sandboxBaseUrlSSvpZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SS14PayablMerchantE14sandboxBaseUrlSSvgZ",
+                "mangledName": "$sSS14PayablMerchantE14sandboxBaseUrlSSvgZ",
+                "moduleName": "PayablMerchant",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "productionUrl",
+            "printedName": "productionUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:SS14PayablMerchantE13productionUrlSSvpZ",
+            "mangledName": "$sSS14PayablMerchantE13productionUrlSSvpZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SS14PayablMerchantE13productionUrlSSvgZ",
+                "mangledName": "$sSS14PayablMerchantE13productionUrlSSvgZ",
+                "moduleName": "PayablMerchant",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "powerCach",
+            "printedName": "powerCach",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:SS14PayablMerchantE9powerCachSSvpZ",
+            "mangledName": "$sSS14PayablMerchantE9powerCachSSvpZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SS14PayablMerchantE9powerCachSSvgZ",
+                "mangledName": "$sSS14PayablMerchantE9powerCachSSvgZ",
+                "moduleName": "PayablMerchant",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sandboxHppBaseUrl",
+            "printedName": "sandboxHppBaseUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:SS14PayablMerchantE17sandboxHppBaseUrlSSvpZ",
+            "mangledName": "$sSS14PayablMerchantE17sandboxHppBaseUrlSSvpZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SS14PayablMerchantE17sandboxHppBaseUrlSSvgZ",
+                "mangledName": "$sSS14PayablMerchantE17sandboxHppBaseUrlSSvgZ",
+                "moduleName": "PayablMerchant",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dependencyContainerError",
+            "printedName": "dependencyContainerError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:SS14PayablMerchantE24dependencyContainerErrorSSvpZ",
+            "mangledName": "$sSS14PayablMerchantE24dependencyContainerErrorSSvpZ",
+            "moduleName": "PayablMerchant",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:SS14PayablMerchantE24dependencyContainerErrorSSvgZ",
+                "mangledName": "$sSS14PayablMerchantE24dependencyContainerErrorSSvgZ",
+                "moduleName": "PayablMerchant",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:SS",
+        "mangledName": "$sSS",
+        "moduleName": "Swift",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodingKeyRepresentable",
+            "printedName": "CodingKeyRepresentable",
+            "usr": "s:s22CodingKeyRepresentableP",
+            "mangledName": "$ss22CodingKeyRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasContiguousBytes",
+            "printedName": "_HasContiguousBytes",
+            "usr": "s:s19_HasContiguousBytesP",
+            "mangledName": "$ss19_HasContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TextOutputStream",
+            "printedName": "TextOutputStream",
+            "usr": "s:s16TextOutputStreamP",
+            "mangledName": "$ss16TextOutputStreamP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TextOutputStreamable",
+            "printedName": "TextOutputStreamable",
+            "usr": "s:s20TextOutputStreamableP",
+            "mangledName": "$ss20TextOutputStreamableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
+            "mangledName": "$ss41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "printedName": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "usr": "s:s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinStringLiteral",
+            "printedName": "_ExpressibleByBuiltinStringLiteral",
+            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
+            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.String.Index",
+                    "usr": "s:SS5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.String.Index",
+                    "usr": "s:SS5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.String.Iterator",
+                    "usr": "s:SS8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.String.Iterator",
+                    "usr": "s:SS8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "StringProtocol",
+            "printedName": "StringProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UTF8View",
+                "printedName": "UTF8View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UTF8View",
+                    "printedName": "Swift.String.UTF8View",
+                    "usr": "s:SS8UTF8ViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UTF16View",
+                "printedName": "UTF16View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UTF16View",
+                    "printedName": "Swift.String.UTF16View",
+                    "usr": "s:SS9UTF16ViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarView",
+                "printedName": "UnicodeScalarView",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnicodeScalarView",
+                    "printedName": "Swift.String.UnicodeScalarView",
+                    "usr": "s:SS17UnicodeScalarViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sy",
+            "mangledName": "$sSy"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringInterpolation",
+            "printedName": "ExpressibleByStringInterpolation",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringInterpolation",
+                "printedName": "StringInterpolation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultStringInterpolation",
+                    "printedName": "Swift.DefaultStringInterpolation",
+                    "usr": "s:s26DefaultStringInterpolationV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s32ExpressibleByStringInterpolationP",
+            "mangledName": "$ss32ExpressibleByStringInterpolationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LosslessStringConvertible",
+            "printedName": "LosslessStringConvertible",
+            "usr": "s:s25LosslessStringConvertibleP",
+            "mangledName": "$ss25LosslessStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MirrorPath",
+            "printedName": "MirrorPath",
+            "usr": "s:s10MirrorPathP",
+            "mangledName": "$ss10MirrorPathP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLRequest",
+        "printedName": "URLRequest",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setMultipartFormData",
+            "printedName": "setMultipartFormData(_:encoding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoding",
+                "printedName": "Swift.String.Encoding",
+                "usr": "s:SS10FoundationE8EncodingV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10Foundation10URLRequestV14PayablMerchantE20setMultipartFormData_8encodingySDyS2SG_SSAAE8EncodingVtKF",
+            "mangledName": "$s10Foundation10URLRequestV14PayablMerchantE20setMultipartFormData_8encodingySDyS2SG_SSAAE8EncodingVtKF",
+            "moduleName": "PayablMerchant",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Foundation10URLRequestV",
+        "mangledName": "$s10Foundation10URLRequestV",
+        "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURLRequest",
+                    "printedName": "Foundation.NSURLRequest",
+                    "usr": "c:objc(cs)NSURLRequest"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURLRequest",
+                    "printedName": "Foundation.NSURLRequest",
+                    "usr": "c:objc(cs)NSURLRequest"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/PopupView\/PopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 2252,
+      "length": 55,
+      "value": "\"Are you sure you want to delete the card ending 8456?\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/PopupView\/PopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 2343,
+      "length": 5,
+      "value": "\"Yes\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/PopupView\/PopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 2364,
+      "length": 5,
+      "value": "\"Yes\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/PopupView\/PopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 2407,
+      "length": 4,
+      "value": "\"No\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/PopupView\/PopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 2427,
+      "length": 4,
+      "value": "\"No\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/PopupView\/PopupView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2465,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 757,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1068,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/View\/CheckboxView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 653,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/View\/CheckboxView.swift",
+      "kind": "StringLiteral",
+      "offset": 754,
+      "length": 36,
+      "value": "\"SAVE_THIS_CARD_FOR_FUTURE_PAYMENTS\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PBLPaymentPage+SwiftUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 221,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/Font+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 177,
+      "length": 2,
+      "value": "34"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/Font+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 242,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/Font+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 304,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/Font+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 363,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/Font+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 426,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/Font+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 494,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/Font+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 562,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/Font+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 624,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/Font+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 667,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 3592,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 3667,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 3745,
+      "length": 13,
+      "value": "\"Card Number\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 3779,
+      "length": 21,
+      "value": "\"0000 0000 0000 0000\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 3844,
+      "length": 6,
+      "value": "\"Card\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 4178,
+      "length": 13,
+      "value": "\"Card Number\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 4212,
+      "length": 21,
+      "value": "\"0000 0000 0000 0000\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "Array",
+      "offset": 4415,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 4600,
+      "length": 13,
+      "value": "\"Card Number\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 4634,
+      "length": 21,
+      "value": "\"0000 0000 0000 0000\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 4699,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "Array",
+      "offset": 4838,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 5025,
+      "length": 13,
+      "value": "\"Card Number\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 5059,
+      "length": 21,
+      "value": "\"0000 0000 0000 0000\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "StringLiteral",
+      "offset": 5124,
+      "length": 6,
+      "value": "\"Card\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ValidatingTextField\/ValidatingTextFieldView.swift",
+      "kind": "Array",
+      "offset": 5269,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PBLPaymentPage.swift",
+      "kind": "Array",
+      "offset": 493,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PBLPaymentPage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 583,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PBLPaymentPage.swift",
+      "kind": "StringLiteral",
+      "offset": 738,
+      "length": 7,
+      "value": "\"CLOSE\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/String+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 193,
+      "length": 26,
+      "value": "\"merchant.com.payabl.pay4\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/String+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 253,
+      "length": 34,
+      "value": "\"merchant.com.powercash21.sandbox\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/String+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 43,
+      "value": "\"https:\/\/fra-dev-buster-35.payabl.dev:9705\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/String+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 394,
+      "length": 25,
+      "value": "\"https:\/\/pay4.payabl.com\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/String+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 448,
+      "length": 19,
+      "value": "\"\/powercash21-3-2\/\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/String+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 504,
+      "length": 43,
+      "value": "\"https:\/\/fra-dev-buster-35.payabl.dev:4433\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/String+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 591,
+      "length": 50,
+      "value": "\"Service should be registered before its resolved\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/DependencyContainer.swift",
+      "kind": "Dictionary",
+      "offset": 241,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 894,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 942,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1086,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1141,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1295,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1348,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1412,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "Array",
+      "offset": 1637,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1697,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1760,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3589,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 3617,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 3790,
+      "length": 5,
+      "value": "\"CVC\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 3810,
+      "length": 5,
+      "value": "\"000\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 3850,
+      "length": 6,
+      "value": "\"Lock\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3888,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 3997,
+      "length": 6,
+      "value": "\"6200\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 4015,
+      "length": 3,
+      "value": "\"$\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 4037,
+      "length": 5,
+      "value": "\"pay\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 4061,
+      "length": 11,
+      "value": "\"Enter CVV\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/TextFieldPopupView.swift",
+      "kind": "StringLiteral",
+      "offset": 4089,
+      "length": 64,
+      "value": "\"Enter the 3-digit CVV for your bank card ending with *****5463\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/CGFloat+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 182,
+      "length": 4,
+      "value": "20.0"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/CGFloat+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 225,
+      "length": 4,
+      "value": "18.0"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/CGFloat+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 267,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/CGFloat+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 308,
+      "length": 4,
+      "value": "14.0"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/CGFloat+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 348,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/CGFloat+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 388,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/CGFloat+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 428,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/CGFloat+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 468,
+      "length": 3,
+      "value": "6.0"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/CGFloat+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 509,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Extensions\/CGFloat+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 551,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ApplePayService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1052,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/ApplePayService.swift",
+      "kind": "StringLiteral",
+      "offset": 774,
+      "length": 15,
+      "value": "\"PayablMerchant.ApplePayService\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PBLNetworkService.swift",
+      "kind": "StringLiteral",
+      "offset": 616,
+      "length": 27,
+      "value": "\"com.payabl.networkService\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PBLNetworkService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 711,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/SendCardDetailsService.swift",
+      "kind": "StringLiteral",
+      "offset": 297,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/SendCardDetailsService.swift",
+      "kind": "StringLiteral",
+      "offset": 695,
+      "length": 20,
+      "value": "\"\/send_card_details\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/View\/PayByCardView.swift",
+      "kind": "StringLiteral",
+      "offset": 3232,
+      "length": 6,
+      "value": "\"6200\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/View\/PayByCardView.swift",
+      "kind": "StringLiteral",
+      "offset": 3250,
+      "length": 3,
+      "value": "\"$\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/CheckoutView.swift",
+      "kind": "StringLiteral",
+      "offset": 4812,
+      "length": 11,
+      "value": "\"sessionId\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/CheckoutView.swift",
+      "kind": "StringLiteral",
+      "offset": 4840,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/CheckoutView.swift",
+      "kind": "StringLiteral",
+      "offset": 4862,
+      "length": 12,
+      "value": "\"ephemeralK\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/CheckoutView.swift",
+      "kind": "StringLiteral",
+      "offset": 4888,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/CheckoutView.swift",
+      "kind": "StringLiteral",
+      "offset": 4906,
+      "length": 7,
+      "value": "\"user1\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/CardView.swift",
+      "kind": "StringLiteral",
+      "offset": 1501,
+      "length": 7,
+      "value": "\"MM\/yy\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/CardView.swift",
+      "kind": "StringLiteral",
+      "offset": 1587,
+      "length": 10,
+      "value": "\"****5348\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/CardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1642,
+      "length": 4,
+      "value": "2000"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/Checkout\/Views\/CardView.swift",
+      "kind": "StringLiteral",
+      "offset": 1653,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/PayByCardViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1086,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/PayByCardViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1320,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/PayByCardViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1551,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/PayByCardViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1803,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/PayByCardViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1849,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Desktop\/Payabl Merchant iOS\/Payabl Merchant iOS\/PayByCard\/PayByCardViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1893,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 628,
+      "length": 12,
+      "value": "\"Background\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 778,
+      "length": 16,
+      "value": "\"BackgroundMono\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 940,
+      "length": 20,
+      "value": "\"BackgroundNegative\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1104,
+      "length": 19,
+      "value": "\"BackgroundNeutral\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1255,
+      "length": 13,
+      "value": "\"BorderBrand\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1404,
+      "length": 15,
+      "value": "\"BorderFocused\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1553,
+      "length": 14,
+      "value": "\"BorderMonomo\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1705,
+      "length": 16,
+      "value": "\"BorderNegative\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1857,
+      "length": 15,
+      "value": "\"BorderPrimary\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2016,
+      "length": 19,
+      "value": "\"OverlayBackground\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2169,
+      "length": 14,
+      "value": "\"TextNegative\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2323,
+      "length": 17,
+      "value": "\"TextPlaceholder\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2472,
+      "length": 13,
+      "value": "\"TextPrimary\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2631,
+      "length": 20,
+      "value": "\"TextPrimaryInverse\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2787,
+      "length": 15,
+      "value": "\"TextSecondary\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2936,
+      "length": 14,
+      "value": "\"TextTertiary\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3078,
+      "length": 11,
+      "value": "\"TextWhite\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3334,
+      "length": 17,
+      "value": "\"AmericanExpress\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3481,
+      "length": 12,
+      "value": "\"ArrowRight\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3609,
+      "length": 5,
+      "value": "\"CVC\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3740,
+      "length": 10,
+      "value": "\"Calendar\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3868,
+      "length": 6,
+      "value": "\"Card\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4015,
+      "length": 18,
+      "value": "\"Checkbox-checked\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4178,
+      "length": 20,
+      "value": "\"Checkbox-unchecked\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4328,
+      "length": 12,
+      "value": "\"ChevonLeft\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4460,
+      "length": 7,
+      "value": "\"Close\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4591,
+      "length": 9,
+      "value": "\"Invalid\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4718,
+      "length": 6,
+      "value": "\"Lock\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4854,
+      "length": 12,
+      "value": "\"Mastercard\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4990,
+      "length": 9,
+      "value": "\"Success\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5125,
+      "length": 10,
+      "value": "\"TrashBin\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5255,
+      "length": 7,
+      "value": "\"Valid\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5380,
+      "length": 6,
+      "value": "\"Visa\""
+    },
+    {
+      "filePath": "\/Users\/metwally\/Library\/Developer\/Xcode\/DerivedData\/PayablMerchant-atsqbirqlxhsnjejyaomuqdnddnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayablMerchant\/IntermediateBuildFilesPath\/PayablMerchant.build\/Release-iphonesimulator\/PayablMerchant.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5514,
+      "length": 11,
+      "value": "\"WhiteLock\""
+    }
+  ]
+}

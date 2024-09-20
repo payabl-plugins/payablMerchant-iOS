@@ -1,0 +1,95 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayablMerchant
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import PassKit
+import Security
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _PassKit_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+
+@_hasMissingDesignatedInitializers public class LocalizationService {
+  public static func localizedString(for key: Swift.String) -> Swift.String
+  @objc deinit
+}
+
+public struct PBLPaymentButton<Content> : SwiftUI.View where Content : SwiftUI.View {
+  public init(paymentPage: PayablMerchant.PBLPaymentPage, onCompletion: @escaping (PayablMerchant.PBLPaymentResult) -> Swift.Void, @SwiftUI.ViewBuilder content: () -> Content)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s14PayablMerchant16PBLPaymentButtonV4bodyQrvp", 0) __<Content>
+}
+extension SwiftUI.View {
+  public func paymentPage(isPresented: SwiftUI.Binding<Swift.Bool>, paymentPage: PayablMerchant.PBLPaymentPage, onCompletion: @escaping (PayablMerchant.PBLPaymentResult) -> Swift.Void) -> some SwiftUI.View
+  
+}
+
+@_hasMissingDesignatedInitializers final public class RouteManager : Combine.ObservableObject {
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public class PBLPaymentPage {
+  public init(configuration: PayablMerchant.PBLConfiguration)
+  public func present(from presentingViewController: UIKit.UIViewController, completion: @escaping (PayablMerchant.PBLPaymentResult) -> Swift.Void)
+  @objc deinit
+}
+extension Swift.String {
+  public static let merchantIdProduction: Swift.String
+  public static let merchantIdSandbox: Swift.String
+  public static let sandboxBaseUrl: Swift.String
+  public static let productionUrl: Swift.String
+  public static let powerCach: Swift.String
+  public static let sandboxHppBaseUrl: Swift.String
+  public static let dependencyContainerError: Swift.String
+}
+
+
+extension Foundation.URLRequest {
+  public mutating func setMultipartFormData(_ parameters: [Swift.String : Swift.String], encoding: Swift.String.Encoding) throws
+}
+public enum MultipartFormDataEncodingError : Swift.Error {
+  case characterSetName
+  case name(Swift.String)
+  case value(Swift.String, name: Swift.String)
+}
+public enum PBLEnvironment {
+  case sandbox
+  case live
+  public static func == (a: PayablMerchant.PBLEnvironment, b: PayablMerchant.PBLEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class PBLConfiguration {
+  public init(sessionId: Swift.String, transactionId: Swift.String, ephemeralKey: Swift.String, merchantId: Swift.String, customerId: Swift.String, environment: PayablMerchant.PBLEnvironment)
+  @objc deinit
+}
+extension PayablMerchant.PBLConfiguration : Swift.Hashable {
+  public static func == (lhs: PayablMerchant.PBLConfiguration, rhs: PayablMerchant.PBLConfiguration) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class ImageService {
+  public static func getImage(_ name: Swift.String) -> SwiftUI.Image?
+  @objc deinit
+}
+
+
+public enum PBLPaymentResult {
+  case completed
+  case canceled
+  case failed(error: any Swift.Error)
+}
+
+extension PayablMerchant.PBLEnvironment : Swift.Equatable {}
+extension PayablMerchant.PBLEnvironment : Swift.Hashable {}
