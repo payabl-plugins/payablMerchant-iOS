@@ -6,7 +6,7 @@ Use `PayablMerchant` framework for easy secure online payment integration for yo
 
 ### Swift Package Manager
 
-- Navigate to `File` > `Add package dependencies` and search for `https://github.com/metwalliesPayabl/PayablMerchant-iOS`
+- Navigate to `File` > `Add package dependencies` and search for `https://github.com/payabl-plugins/payablMerchant-iOS/`
 
 ### Cocoapods
 
