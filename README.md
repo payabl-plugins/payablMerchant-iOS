@@ -19,11 +19,9 @@ Welcome to the `PayabalMerchant` repository! This repository contains the SDK fo
 
 ### Swift Package Manager (SPM)
 
-To integrate PayabalMerchant into your Xcode project using SPM, add it to the dependencies value of your `Package.swift`:
-
-    dependencies: [
-        .package(url: "https://github.com/yourusername/PayabalMerchant.git", .upToNextMajor(from: "1.0.0"))
-    ]
+To install the SDK, follow these steps:
+1. In Xcode, select File > Add Packages… and enter https://github.com/payabl-plugins/payablMerchant-iOS as the repository URL.
+2. Select the latest version number from our (releases page)[https://github.com/payabl-plugins/payablMerchant-iOS/releases]
 
 ### CocoaPods
 
@@ -35,31 +33,62 @@ Then, run the following command:
 
     $ pod install
 
+
 ## Integration
 
-<!-- tabs:start -->
-#### **SwiftUI**
+### **SwiftUI**
 
 To use PayabalMerchant in a SwiftUI project:
 
-1. Import the package in your Swift file:
+#### 1. Server-side
+
+This integration requires endpoints on your server that talk to the Payabl API. Use our official libraries for access to the Payabl API from your server:
+
+// TODO: Require assistance from BE on how to integrate server to server
+
+#### 2. Add an endpoint
+
+Your app should reach out to your server to start a payment session from payabl server, note that
+for security reasons your app can't directly communicate with payabl server.
+
+Payabl server will return 
+  - Session id
+  - Transaction id
+  - Ephemeral key
+  
+This data should be returned to the mobile client to initate `PayablPaymentPage`
+
+
+### 3. Import the package in your Swift file:
 
        import PayabalMerchant
 
-2. [Add specific instructions for using the main features of PayabalMerchant in SwiftUI]
+### 4. Integrate Payabl payemnt page 
 
 Example usage:
 
     class DemoCartViewModel: ObservableObject {
-      @Published var paymentPage: PBLPaymentPage
-  
-      init() {
-        let config = PBLConfiguration(
-        sessionId: "fa5cc7f8eab3fb8692132bd9fdebf504dd951db5",
-        transactionId: "215509341",
-        ephemeralKey: "key",
-        merchantId: "mselsoudany",
-        customerId: "user@mail.com",
+      @Published var paymentPage: PBLPaymentPage?
+      let backendCheckoutUrl = = URL(string: "backend_endpoint/payment_page")!
+    func preparePaymentPage() {
+      var request = URLRequest(url: backendCheckoutUrl)
+      request.httpMethod = "POST"
+      let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
+      guard let data = data,
+            let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+      else { return }
+      let sessionId = json["sessionId"]
+      let transactionId = json["transactionId"]
+      let ephemeralKey = json["empheralKey"]
+      let merchantId = json["merchantId"]
+      
+      
+      let config = PBLConfiguration(
+        sessionId: sessionId,
+        transactionId: transactionId,
+        ephemeralKey: ephemeralKey,
+        merchantId: merchantId,
+        customerId: currentUser.shared.email, // any customer identifer can work
         environment: .sandbox
       )
       self.paymentPage = PBLPaymentPage(configuration: config)
@@ -94,10 +123,11 @@ Example usage:
         .background(.black)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .padding()
+        .onAppear { demoCartViewModel.preparePaymentPage() }
     }
   }
 
-#### **UIKit**
+### **UIKit**
 
 To use PayabalMerchant in a UIKit project:
 
@@ -119,7 +149,6 @@ Example usage:
             // Set up constraints
         }
     }
-<!-- tabs:end -->
 
 ## How It Works
 
