@@ -151,13 +151,9 @@ Example usage:
         }
     }
 
-## How It Works
+## Flow diagram
 
-[Brief explanation of how PayabalMerchant works]
-
-[Placeholder for detailed flow diagram]
-
-![PayabalMerchant Flow](placeholder_for_flow_diagram.png)
+![PayabalMerchant Flow](Flow.png)
 
 ## Additional Features
 
