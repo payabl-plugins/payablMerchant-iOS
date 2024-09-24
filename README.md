@@ -66,7 +66,7 @@ This data should be returned to the mobile client to initate `PayablPaymentPage`
 ### 4. Integrate Payabl payemnt page 
 
 Example usage:
-
+```
     class DemoCartViewModel: ObservableObject {
       @Published var paymentPage: PBLPaymentPage?
       let backendCheckoutUrl = = URL(string: "backend_endpoint/payment_page")!
@@ -128,7 +128,7 @@ Example usage:
         .onAppear { demoCartViewModel.preparePaymentPage() }
     }
   }
-
+```
 ### **UIKit**
 
 To use PayabalMerchant in a UIKit project:
