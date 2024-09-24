@@ -50,12 +50,52 @@ To use PayabalMerchant in a SwiftUI project:
 
 Example usage:
 
-    struct ContentView: View {
-        var body: some View {
-            PayabalMerchantView()
-                .environmentObject(PayabalMerchantViewModel())
-        }
+    class DemoCartViewModel: ObservableObject {
+      @Published var paymentPage: PBLPaymentPage
+  
+      init() {
+        let config = PBLConfiguration(
+        sessionId: "fa5cc7f8eab3fb8692132bd9fdebf504dd951db5",
+        transactionId: "215509341",
+        ephemeralKey: "key",
+        merchantId: "mselsoudany",
+        customerId: "user@mail.com",
+        environment: .sandbox
+      )
+      self.paymentPage = PBLPaymentPage(configuration: config)
     }
+    
+    func didFinishCheckout(result: PBLPaymentResult) {
+      switch result {
+      case .canceled:
+        print("Client has canceled the checkout proccess")
+      case .completed:
+        print("Client has successfuly completed checkout")
+      case .failed(let error):
+        print("Failed due to: ", error.localizedDescription)
+      default:
+        fatalError()
+      }
+    }
+  }
+  
+  struct ContentView: View {
+    let demoCartViewModel = DemoCartViewModel()
+    var body: some View {
+        VStack {
+          PBLPaymentButton(paymentPage: demo.paymentPage) { result in
+            demoCartViewModel.didFinishCheckout(result: result)
+          } content: {
+            Text("Checkout")
+              .padding()
+          }
+        }
+        .foregroundStyle(.white)
+        .background(.black)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .padding()
+    }
+  }
 
 #### **UIKit**
 
