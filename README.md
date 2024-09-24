@@ -2,6 +2,18 @@
 
 Welcome to the `PayabalMerchant` repository! This repository contains the SDK for integrating Payabal Merchant services into your iOS applications. Whether you're using SwiftUI or UIKit, this guide will help you get started with the integration.
 
+## Table of Contents
+
+- [Installation](#installation)
+  - [Swift Package Manager (SPM)](#swift-package-manager-spm)
+  - [CocoaPods](#cocoapods)
+- [Integration Guide](#integration)
+  - [SwiftUI](#swiftui)
+  - [UIKit](#uikit)
+- [Flow Diagram](#flow-diagram)
+- [Contributing](#contributing)
+- [License](#license)
+
 
 ## Installation
 
@@ -26,7 +38,6 @@ Then, run the following command:
 ## Integration
 
 <!-- tabs:start -->
-
 #### **SwiftUI**
 
 To use PayabalMerchant in a SwiftUI project:
@@ -68,6 +79,7 @@ Example usage:
             // Set up constraints
         }
     }
+<!-- tabs:end -->
 
 ## How It Works
 
@@ -77,10 +89,6 @@ Example usage:
 
 ![PayabalMerchant Flow](placeholder_for_flow_diagram.png)
 
-## Configuration
-
-[Add any necessary configuration steps or options]
-
 ## Additional Features
 
 [List and briefly explain any additional features of PayabalMerchant]
@@ -89,10 +97,6 @@ Example usage:
 
 [Common issues and their solutions]
 
-## Contributing
-
-[Instructions for contributors]
-
 ## License
 
-PayabalMerchant is released under the [choose a license] license. See [LICENSE](LICENSE) for details.
+PayabalMerchant is released under the MIT license. See [LICENSE](LICENSE) for details.
