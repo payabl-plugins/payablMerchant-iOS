@@ -36,10 +36,6 @@ Then, run the following command:
 
 ## Integration
 
-### **SwiftUI**
-
-To use PayabalMerchant in a SwiftUI project:
-
 #### 1. Server-side
 
 This integration requires endpoints on your server that talk to the Payabl API. Use our official libraries for access to the Payabl API from your server:
@@ -63,7 +59,10 @@ This data should be returned to the mobile client to initate `PayablPaymentPage`
 
        import PayabalMerchant
 
-### 4. Integrate Payabl payemnt page 
+### **SwiftUI**
+To use PayabalMerchant in a SwiftUI project:
+
+### Integrate Payabl payemnt page 
 
 Example usage:
 ```
