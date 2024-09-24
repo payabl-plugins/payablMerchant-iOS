@@ -21,7 +21,7 @@ Welcome to the `PayabalMerchant` repository! This repository contains the SDK fo
 
 To install the SDK, follow these steps:
 1. In Xcode, select File > Add Packages… and enter https://github.com/payabl-plugins/payablMerchant-iOS as the repository URL.
-2. Select the latest version number from our (releases page)[https://github.com/payabl-plugins/payablMerchant-iOS/releases]
+2. Select the latest version number from our [releases page](https://github.com/payabl-plugins/payablMerchant-iOS/releases)
 
 ### CocoaPods
 
@@ -70,28 +70,30 @@ Example usage:
     class DemoCartViewModel: ObservableObject {
       @Published var paymentPage: PBLPaymentPage?
       let backendCheckoutUrl = = URL(string: "backend_endpoint/payment_page")!
-    func preparePaymentPage() {
-      var request = URLRequest(url: backendCheckoutUrl)
-      request.httpMethod = "POST"
-      let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
-      guard let data = data,
-            let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
-      else { return }
-      let sessionId = json["sessionId"]
-      let transactionId = json["transactionId"]
-      let ephemeralKey = json["empheralKey"]
-      let merchantId = json["merchantId"]
-      
-      
-      let config = PBLConfiguration(
-        sessionId: sessionId,
-        transactionId: transactionId,
-        ephemeralKey: ephemeralKey,
-        merchantId: merchantId,
-        customerId: currentUser.shared.email, // any customer identifer can work
-        environment: .sandbox
-      )
-      self.paymentPage = PBLPaymentPage(configuration: config)
+
+      func preparePaymentPage() {
+        var request = URLRequest(url: backendCheckoutUrl)
+        request.httpMethod = "POST"
+        let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
+        guard let data = data,
+              let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+        else { return }
+        let sessionId = json["sessionId"]
+        let transactionId = json["transactionId"]
+        let ephemeralKey = json["empheralKey"]
+        let merchantId = json["merchantId"]
+        
+        
+        let config = PBLConfiguration(
+          sessionId: sessionId,
+          transactionId: transactionId,
+          ephemeralKey: ephemeralKey,
+          merchantId: merchantId,
+          customerId: currentUser.shared.email, // any customer identifer can work
+          environment: .sandbox
+        )
+        self.paymentPage = PBLPaymentPage(configuration: config)
+      }
     }
     
     func didFinishCheckout(result: PBLPaymentResult) {
