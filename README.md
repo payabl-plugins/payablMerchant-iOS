@@ -3,17 +3,19 @@
 Welcome to the `PayabalMerchant` repository! This repository contains the SDK for integrating Payabal Merchant services into your iOS applications. Whether you're using SwiftUI or UIKit, this guide will help you get started with the integration.
 
 ## Table of Contents
-
+- [Flow Diagram](#flow-diagram)
 - [Installation](#installation)
   - [Swift Package Manager (SPM)](#swift-package-manager-spm)
   - [CocoaPods](#cocoapods)
 - [Integration Guide](#integration)
   - [SwiftUI](#swiftui)
   - [UIKit](#uikit)
-- [Flow Diagram](#flow-diagram)
 - [Contributing](#contributing)
 - [License](#license)
 
+## Flow diagram
+
+![PayabalMerchant Flow](Flow.png)
 
 ## Installation
 
@@ -141,19 +143,60 @@ To use PayabalMerchant in a UIKit project:
 Example usage:
 
     class ViewController: UIViewController {
+        let pblPaymentPage: PBLPaymentPage?
         override func viewDidLoad() {
             super.viewDidLoad()
             
-            let payabalMerchantView = PayabalMerchantUIView()
-            view.addSubview(payabalMerchantView)
+            let checkoutButton = UIButton(type: .system)
+            checkoutButton.setTitle("Checkout", for: .normal)
+            checkoutButton.setTitleColor(.white, for: .normal)
+            checkoutButton.backgroundColor = .blue
+            checkoutButton.layer.cornerRadius = 8
+            checkoutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+
+            checkoutButton.frame = CGRect(x: 50, y: 200, width: 200, height: 50)
             
-            // Set up constraints
+            self.view.addSubview(checkoutButton)
+            
+            checkoutButton.addTarget(self, action: #selector(payableOrder), for: .touchUpInside)
+        }
+
+        @objc func payableOrder() {
+            var request = URLRequest(url: backendCheckoutUrl)
+            request.httpMethod = "POST"
+            let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
+            guard let data = data,
+                  let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+            else { return }
+            let sessionId = json["sessionId"]
+            let transactionId = json["transactionId"]
+            let ephemeralKey = json["empheralKey"]
+            let merchantId = json["merchantId"]
+            
+            
+            let config = PBLConfiguration(
+              sessionId: sessionId,
+              transactionId: transactionId,
+              ephemeralKey: ephemeralKey,
+              merchantId: merchantId,
+              customerId: currentUser.shared.email, // any customer identifer can work
+              environment: .sandbox
+            )
+            pblPaymentPage = PBLPaymentPage(configuration: config)
+            pblPaymentPage.present(from: self) { status in
+            switch status {
+              case .canceled:
+                print("Client has canceled the checkout proccess")
+              case .completed:
+                print("Client has successfuly completed checkout")
+              case .failed(let error):
+                print("Failed due to: ", error.localizedDescription)
+              default:
+                fatalError()
+              }
+            }
         }
     }
-
-## Flow diagram
-
-![PayabalMerchant Flow](Flow.png)
 
 ## Additional Features
 
