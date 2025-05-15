@@ -1,48 +1,33 @@
-# PayabalMerchant
+# payabl. iOS SDK
 
-Welcome to the `PayabalMerchant` repository! This repository contains the SDK for integrating Payabal Merchant services into your iOS applications. Whether you're using SwiftUI or UIKit, this guide will help you get started with the integration.
+Welcome to our repository! It contains our iOS SDK for integrating into your iOS app. Supporting both SwiftUI and UIKit with our guide that will help you to get started with integration of our SDK into you app in no time!
 
 ## Table of Contents
-- [Flow Diagram](#flow-diagram)
+- [Integration Workflow](#integration-workflow)
 - [Installation](#installation)
   - [Swift Package Manager (SPM)](#swift-package-manager-spm)
-  - [CocoaPods](#cocoapods)
 - [Integration Guide](#integration)
   - [SwiftUI](#swiftui)
   - [UIKit](#uikit)
-- [Contributing](#contributing)
 - [License](#license)
 
-## Flow diagram
+## Integration Workflow
 
-![PayabalMerchant Flow](Flow.png)
+![image](https://github.com/user-attachments/assets/79b06a1c-f032-4ae6-9a39-0afcaf75a8f9)
 
 ## Installation
 
 ### Swift Package Manager (SPM)
 
 To install the SDK, follow these steps:
-1. In Xcode, select File > Add Packages… and enter https://github.com/payabl-plugins/payablMerchant-iOS as the repository URL.
+1. In Xcode, select File > Add Packages… and enter https://github.com/payabl-plugins/payablMerchant-iOS as the repository URL
 2. Select the latest version number from our [releases page](https://github.com/payabl-plugins/payablMerchant-iOS/releases)
-
-### CocoaPods
-
-To integrate PayabalMerchant into your Xcode project using CocoaPods, add it to your `Podfile`:
-
-    pod 'PayabalMerchant', '~> 1.0'
-
-Then, run the following command:
-
-    $ pod install
-
 
 ## Integration
 
-#### 1. Server-side
+#### 1. Merchant Server
 
-This integration requires endpoints on your server that talk to the Payabl API. Use our official libraries for access to the Payabl API from your server:
-
-// TODO: Require assistance from BE on how to integrate server to server
+This integration requires setting up your server to be able to call our mobile SDK backend API. Refer to the [Setup Server](https://docs.payabl.com/docs/setup-your-server) page of our Mobile SDK integration documentation.
 
 #### 2. Add an endpoint
 
@@ -50,24 +35,25 @@ Your app should reach out to your server to start a payment session from payabl 
 for security reasons your app can't directly communicate with payabl server.
 
 Payabl server will return 
-  - Session id
-  - Transaction id
-  - Ephemeral key
+  - `session_id`
+  - `ephemeral_key`
+  - `transaction_id`
   
 This data should be returned to the mobile client to initate `PayablPaymentPage`
 
-
 ### 3. Import the package in your Swift file:
 
-       import PayabalMerchant
+```swift
+    import PayabalMerchant
+```
 
 ### **SwiftUI**
 To use PayabalMerchant in a SwiftUI project:
 
-### Integrate Payabl payemnt page 
+### Integrate a payemnt page 
 
 Example usage:
-```
+```swift
     class DemoCartViewModel: ObservableObject {
       @Published var paymentPage: PBLPaymentPage?
       let backendCheckoutUrl = = URL(string: "backend_endpoint/payment_page")!
@@ -136,12 +122,13 @@ To use PayabalMerchant in a UIKit project:
 
 1. Import the package in your Swift file:
 
-       import PayabalMerchant
-
-2. [Add specific instructions for using the main features of PayabalMerchant in UIKit]
+```swift
+   import PayabalMerchant
+```
 
 Example usage:
 
+```swift
     class ViewController: UIViewController {
         let pblPaymentPage: PBLPaymentPage?
         override func viewDidLoad() {
@@ -197,15 +184,15 @@ Example usage:
             }
         }
     }
-
+```
 ## Additional Features
-
-[List and briefly explain any additional features of PayabalMerchant]
+- **Apple Pay**: check our [Apple Pay related API documentation](https://docs.payabl.com/docs/ios-apple-pay) for details on how to configure Apple Pay for your app.
+- **3-D Secure 2.x**: Enhanced security to reduce fraud and chargebacks
+- **Interface Customization:** supports dark and light modes
+- **Save Card** - Save cards for the future payments (up to four cards)
 
 ## Troubleshooting
-
-[Common issues and their solutions]
+Please refer to our API documentation [troubleshooting page](https://docs.payabl.com/docs/error-handling-troubleshooting-guidelines).
 
 ## License
-
-PayabalMerchant is released under the MIT license. See [LICENSE](LICENSE) for details.
+PayabalMerchant is released under the MIT license. See [license](LICENSE) for details.
