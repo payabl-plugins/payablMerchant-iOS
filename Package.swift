@@ -2,20 +2,31 @@
 import PackageDescription
 
 let package = Package(
-    name: "PayablMerchant",
+    name: "Payabl",
     platforms: [
         .iOS(.v16)
     ],
     products: [
         .library(
-            name: "PayablMerchant",
-            targets: ["PayablMerchant"]
-        )
+            name: "Payabl",
+            targets: ["PayablMerchantWrapper"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/bugsnag/bugsnag-cocoa", from: "6.0.0")
     ],
     targets: [
         .binaryTarget(
             name: "PayablMerchant",
-            path: "./PayablMerchant.xcframework"
+            path: "PayablMerchant.xcframework"
+        ),
+        .target(
+            name: "PayablMerchantWrapper",
+            dependencies: [
+                .product(name: "Bugsnag", package: "bugsnag-cocoa", condition: .when(platforms: [.iOS])),
+                .target(name: "PayablMerchant")
+            ],
+            path: "Sources/PayablMerchantWrapper",
+            publicHeadersPath: ""
         )
     ]
 )

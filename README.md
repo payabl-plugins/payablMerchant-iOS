@@ -116,7 +116,73 @@ Example usage:
     }
   }
 ```
+
+### Integrate Payabl. payment button
+
+Example usage:
+```
+    class DemoCartViewModel: ObservableObject {
+      @Published var paymentPage: PBLPaymentPage?
+      let backendCheckoutUrl = = URL(string: "backend_endpoint/payment_page")!
+
+    func prepareApplePay() async {
+      guard let pblData = await startOrder() else { return }
+      let pblConfig = PBLConfiguration(
+      sessionId: pblData.sessionId,
+      ephemeralKey: pblData.ephemeralKey,
+      customerId: "",
+      environment: isProduction ? .live : .sandbox,
+      transactionId: pblData.transactionId,
+      appleMerchantId: "merchant.payabl.isdk"
+    )
+    pblApplePay = PBLApplePay(
+      configuration: pblConfig,
+      style: .whiteOutline,
+      onCompletion: { [weak self] result in
+        self?.didFinishCheckout(result: result)
+      },
+      errorDelegate: self
+    )
+    Task { @MainActor in
+      isApplePaySessionLoaded = await pblApplePay?.loadSession() ?? false && PBLApplePay.deviceSupportsApplePay()
+    }
+  }
+    
+    func didFinishCheckout(result: PBLPaymentResult) {
+      switch result {
+      case .canceled:
+        print("Client has canceled the checkout proccess")
+      case .completed:
+        print("Client has successfuly completed checkout")
+      case .failed(let error):
+        print("Failed due to: ", error.localizedDescription)
+      default:
+        fatalError()
+      }
+    }
+  }
+  
+  struct ContentView: View {
+    let demoCartViewModel = DemoCartViewModel()
+    var body: some View {
+      HStack {
+          if cartVM.isApplePaySessionLoaded
+            cartVM.pblApplePay?.button
+              .frame(maxWidth: 200)
+          }
+      }
+      .onAppear {
+        Task {
+          await cartVM.prepareApplePay()
+        }
+      }
+    }
+  }
+```
+
 ### **UIKit**
+
+### Integrate a payemnt page 
 
 To use PayabalMerchant in a UIKit project:
 
@@ -148,7 +214,7 @@ Example usage:
             checkoutButton.addTarget(self, action: #selector(payableOrder), for: .touchUpInside)
         }
 
-        @objc func payableOrder() {
+        @objc func payablOrder() {
             var request = URLRequest(url: backendCheckoutUrl)
             request.httpMethod = "POST"
             let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
@@ -185,6 +251,78 @@ Example usage:
         }
     }
 ```
+
+### Integrate Payabl. payment button
+
+1. Import the package in your Swift file:
+
+```swift
+   import PayabalMerchant
+```
+
+Example usage:
+
+```swift
+    class ViewController: UIViewController {
+        let pblPaymentPage: PBLApplePay?
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            let checkoutButton = UIButton(type: .system)
+            checkoutButton.setTitle("Checkout", for: .normal)
+            checkoutButton.setTitleColor(.white, for: .normal)
+            checkoutButton.backgroundColor = .blue
+            checkoutButton.layer.cornerRadius = 8
+            checkoutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+
+            checkoutButton.frame = CGRect(x: 50, y: 200, width: 200, height: 50)
+            
+            self.view.addSubview(checkoutButton)
+            
+            checkoutButton.addTarget(self, action: #selector(payableOrder), for: .touchUpInside)
+        }
+
+        @objc func payablOrder() {
+            var request = URLRequest(url: backendCheckoutUrl)
+            request.httpMethod = "POST"
+            let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
+            guard let data = data,
+                  let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+            else { return }
+            let sessionId = json["sessionId"]
+            let transactionId = json["transactionId"]
+            let ephemeralKey = json["empheralKey"]
+            let merchantId = json["merchantId"]
+            
+            
+            let config = PBLConfiguration(
+              sessionId: sessionId,
+              transactionId: transactionId,
+              ephemeralKey: ephemeralKey,
+              merchantId: merchantId,
+              customerId: currentUser.shared.email, // any customer identifer can work
+              environment: .sandbox
+            )
+            let applePay = PBLApplePay(configuration: config, style: .automatic) { status in
+              print(status)
+            }
+            Task {
+              if await applePay.loadSession() && PBLApplePay.deviceSupportsApplePay() {
+              let applePayButton = UIHostingController(rootView: applePay.button)
+              addChild(swiftUIButton)
+              view.addSubview(swiftUIButton.view)
+              applePayButton.didMove(toParent: self)
+              applePayButton.view.translatesAutoresizingMaskIntoConstraints = false
+              NSLayoutConstraint.activate([
+                  applePayButton.view.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                  applePayButton.view.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+              ])
+            }
+        }
+    }
+```
+
+
 ## Additional Features
 - **Apple Pay**: check our [Apple Pay related API documentation](https://docs.payabl.com/docs/ios-apple-pay) for details on how to configure Apple Pay for your app.
 - **3-D Secure 2.x**: Enhanced security to reduce fraud and chargebacks
