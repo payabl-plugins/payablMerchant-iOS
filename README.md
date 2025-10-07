@@ -189,22 +189,139 @@ To use PayabalMerchant in a UIKit project:
 
 1. Import the package in your Swift file:
 
-       import PayabalMerchant
-
-2. [Add specific instructions for using the main features of PayabalMerchant in UIKit]
+```swift
+   import PayabalMerchant
+```
 
 Example usage:
 
+```swift
     class ViewController: UIViewController {
+        let pblPaymentPage: PBLPaymentPage?
         override func viewDidLoad() {
             super.viewDidLoad()
             
-            let payabalMerchantView = PayabalMerchantUIView()
-            view.addSubview(payabalMerchantView)
+            let checkoutButton = UIButton(type: .system)
+            checkoutButton.setTitle("Checkout", for: .normal)
+            checkoutButton.setTitleColor(.white, for: .normal)
+            checkoutButton.backgroundColor = .blue
+            checkoutButton.layer.cornerRadius = 8
+            checkoutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+
+            checkoutButton.frame = CGRect(x: 50, y: 200, width: 200, height: 50)
             
-            // Set up constraints
+            self.view.addSubview(checkoutButton)
+            
+            checkoutButton.addTarget(self, action: #selector(payableOrder), for: .touchUpInside)
+        }
+
+        @objc func payablOrder() {
+            var request = URLRequest(url: backendCheckoutUrl)
+            request.httpMethod = "POST"
+            let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
+            guard let data = data,
+                  let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+            else { return }
+            let sessionId = json["sessionId"]
+            let transactionId = json["transactionId"]
+            let ephemeralKey = json["empheralKey"]
+            let merchantId = json["merchantId"]
+            
+            
+            let config = PBLConfiguration(
+              sessionId: sessionId,
+              transactionId: transactionId,
+              ephemeralKey: ephemeralKey,
+              merchantId: merchantId,
+              customerId: currentUser.shared.email, // any customer identifer can work
+              environment: .sandbox
+            )
+            pblPaymentPage = PBLPaymentPage(configuration: config)
+            pblPaymentPage.present(from: self) { status in
+            switch status {
+              case .canceled:
+                print("Client has canceled the checkout proccess")
+              case .completed:
+                print("Client has successfuly completed checkout")
+              case .failed(let error):
+                print("Failed due to: ", error.localizedDescription)
+              default:
+                fatalError()
+              }
+            }
         }
     }
+```
+
+### Integrate Payabl. payment button
+
+1. Import the package in your Swift file:
+
+```swift
+   import PayabalMerchant
+```
+
+Example usage:
+
+```swift
+    class ViewController: UIViewController {
+        let pblPaymentPage: PBLApplePay?
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            let checkoutButton = UIButton(type: .system)
+            checkoutButton.setTitle("Checkout", for: .normal)
+            checkoutButton.setTitleColor(.white, for: .normal)
+            checkoutButton.backgroundColor = .blue
+            checkoutButton.layer.cornerRadius = 8
+            checkoutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+
+            checkoutButton.frame = CGRect(x: 50, y: 200, width: 200, height: 50)
+            
+            self.view.addSubview(checkoutButton)
+            
+            checkoutButton.addTarget(self, action: #selector(payableOrder), for: .touchUpInside)
+        }
+
+        @objc func payablOrder() {
+            var request = URLRequest(url: backendCheckoutUrl)
+            request.httpMethod = "POST"
+            let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
+            guard let data = data,
+                  let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+            else { return }
+            let sessionId = json["sessionId"]
+            let transactionId = json["transactionId"]
+            let ephemeralKey = json["empheralKey"]
+            let merchantId = json["merchantId"]
+            
+            
+            let config = PBLConfiguration(
+              sessionId: sessionId,
+              transactionId: transactionId,
+              ephemeralKey: ephemeralKey,
+              merchantId: merchantId,
+              customerId: currentUser.shared.email, // any customer identifer can work
+              environment: .sandbox
+            )
+            let applePay = PBLApplePay(configuration: config, style: .automatic) { status in
+              print(status)
+            }
+            Task {
+              if await applePay.loadSession() && PBLApplePay.deviceSupportsApplePay() {
+              let applePayButton = UIHostingController(rootView: applePay.button)
+              addChild(swiftUIButton)
+              view.addSubview(swiftUIButton.view)
+              applePayButton.didMove(toParent: self)
+              applePayButton.view.translatesAutoresizingMaskIntoConstraints = false
+              NSLayoutConstraint.activate([
+                  applePayButton.view.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                  applePayButton.view.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+              ])
+            }
+        }
+    }
+```
 
 ## Flow diagram
 
