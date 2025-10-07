@@ -1,0 +1,106 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayablMerchant
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Combine
+import CryptoKit
+import DeveloperToolsSupport
+import Foundation
+import Network
+import PassKit
+import Security
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _PassKit_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+
+
+@_Concurrency.MainActor @preconcurrency public struct PBLPaymentButton<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(paymentPage: PayablMerchant.PBLPaymentPage, onCompletion: @escaping (PayablMerchant.PBLPaymentResult) -> Swift.Void, errorDelegate: (any PayablMerchant.PBLErrorDelegate)? = nil, @SwiftUICore.ViewBuilder content: () -> Content)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s14PayablMerchant16PBLPaymentButtonV4bodyQrvp", 0) __<Content>
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func paymentPage(isPresented: SwiftUICore.Binding<Swift.Bool>, paymentPage: PayablMerchant.PBLPaymentPage, errorDelegate: (any PayablMerchant.PBLErrorDelegate)?, onCompletion: @escaping (PayablMerchant.PBLPaymentResult) -> Swift.Void) -> some SwiftUICore.View
+  
+}
+public protocol PBLApplePayTapDelegate : AnyObject {
+  func applePayTapped(onLoadSessionCompleted: @escaping (PayablMerchant.PBLConfiguration, any PayablMerchant.PBLErrorDelegate) -> Swift.Void)
+}
+final public class PBLApplePay {
+  public static func deviceSupportsApplePay() -> Swift.Bool
+  public init(style: PassKit.PKPaymentButtonStyle, delegate: any PayablMerchant.PBLApplePayTapDelegate)
+  final public var button: some SwiftUICore.View {
+    get
+  }
+  @objc deinit
+}
+public struct StatusModel : Swift.Decodable, Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: PayablMerchant.StatusModel, b: PayablMerchant.StatusModel) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+
+
+final public class PBLPaymentPage {
+  public init(configuration: PayablMerchant.PBLConfiguration)
+  final public func present(from presentingViewController: UIKit.UIViewController, completion: @escaping (PayablMerchant.PBLPaymentResult) -> Swift.Void, errorDelegate: (any PayablMerchant.PBLErrorDelegate)? = nil)
+  @objc deinit
+}
+public protocol PBLErrorDelegate : AnyObject {
+  func errorOccured(error: any Swift.Error)
+}
+
+public enum MultipartFormDataEncodingError : Swift.Error {
+  case characterSetName
+  case name(Swift.String)
+  case value(Swift.String, name: Swift.String)
+}
+public enum PBLEnvironment {
+  case sandbox
+  case live
+  public static func == (a: PayablMerchant.PBLEnvironment, b: PayablMerchant.PBLEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class PBLConfiguration {
+  public init(sessionId: Swift.String, ephemeralKey: Swift.String, customerId: Swift.String, environment: PayablMerchant.PBLEnvironment, transactionId: Swift.Int, appleMerchantId: Swift.String?)
+  @objc deinit
+}
+extension PayablMerchant.PBLConfiguration : Swift.Hashable {
+  public static func == (lhs: PayablMerchant.PBLConfiguration, rhs: PayablMerchant.PBLConfiguration) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+
+
+public enum PBLPaymentResult {
+  case completed(status: PayablMerchant.StatusModel?)
+  case canceled
+  case failed(error: any Swift.Error)
+}
+extension PayablMerchant.PBLPaymentResult : Swift.Hashable {
+  public static func == (lhs: PayablMerchant.PBLPaymentResult, rhs: PayablMerchant.PBLPaymentResult) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+
+
+
+extension PayablMerchant.PBLPaymentButton : Swift.Sendable {}
+extension PayablMerchant.PBLEnvironment : Swift.Equatable {}
+extension PayablMerchant.PBLEnvironment : Swift.Hashable {}
